@@ -1,0 +1,6 @@
+var count = 0;
+
+while ( count < 26 ) {
+    document.write("<p>Now in loop #" + count + "</p>");
+    count += 1;
+}

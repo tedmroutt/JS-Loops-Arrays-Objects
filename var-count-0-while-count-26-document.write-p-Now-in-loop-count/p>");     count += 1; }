@@ -6,6 +6,8 @@ while ( count < 26 ) {
 }
 
 
+JavaScript Loops, Arrays and Objects 
+
 Exercise - Using Array Methods
 
 var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];

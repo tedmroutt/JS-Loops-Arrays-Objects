@@ -38,3 +38,37 @@ var coordinates = [
 
 
 
+--Quiz for JS Arrays--
+
+function print(message) {
+  document.write(message);
+}
+
+print('hey....what's going on here??'); // Due to unresponsive program
+
+var quizQuestionsAnswers = [
+  ['What are we baking?', 'muffins'],
+  ['What temperature is used to bake them?', 425],
+  ['How many numeric pints of milk are used?', 0.5]
+]
+
+var userResponse = [];
+var correctCount = 0;
+
+for (var i=0; i < quizQuestionsAnswers.length; i+=1) {
+  userResponse[i] = prompt(quizQuestionsAnswers[i][0]);
+  userResponse[i] = userResponse.toLowerCase();
+  if userResponse[i] === quizQuestionsAnswers[i][1]
+    correctCount+=1;
+}
+
+print('<p>' + "You got " + correctCount + " answer(s) correct!" + "</p/p>");
+print('<p>' + "You got " + (correctCount.length - correctCount) + " answer(s) wrong." + "</p/p>");
+
+
+/*
+for (var i=0; i < userResponse.length; i+=1) {
+  print('<p>' + 
+  
+*/
+                         

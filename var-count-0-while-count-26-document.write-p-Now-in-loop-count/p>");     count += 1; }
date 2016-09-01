@@ -14,3 +14,19 @@ var months = ['January','February','March','April','May','June','July','August',
 
 var monthsString = months.join(', ');
 console.log(monthsString);
+
+
+Exercise - Create a two-dimensional array
+-First Objective-
+
+var coordinates = [];
+
+-Second Objective-
+
+var coordinates = [
+  [0,1]
+];
+
+-Third Objective-
+
+

@@ -4,3 +4,11 @@ while ( count < 26 ) {
     document.write("<p>Now in loop #" + count + "</p>");
     count += 1;
 }
+
+
+Exercise - Using Array Methods
+
+var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+var monthsString = months.join(', ');
+console.log(monthsString);

@@ -1,3 +1,5 @@
+*** JS Array section ***
+
 var count = 0;
 
 while ( count < 26 ) {
@@ -131,6 +133,68 @@ for (var i = 0; i < responseWrong.length; i+=1) {
     print(i + ". " + responseWrong[i] = "</p>");
   
 }
+
+
+
+
+
+JavaScript Loops, Arrays and Objects 
+*** Objects section ***
+
+--Create a JS Object--
+
+var paris = {
+  population: 2.211e6,
+  latitude: '48.8567 N',
+  longitude: '2.3508 E'
+};
+
+
+--Access & Set Object properties--
+
+var newYork = {
+  population: 100, 
+  latitude: '40.7127 N',
+  longitude: '74.0059 W'
+};
+
+newYork.population = 8.406e6;
+newYork.country = 'USA';
+
+
+--Accessing all the properties in an object--
+
+var shanghai = {
+  population: 14.35e6,
+  longitude: '31.2000 N',
+  latitude: '121.5000 E',
+  country: 'CHN'
+};
+
+for (var property in shanghai) {
+  console.log(property, ": ", shanghai[property]);
+}
+
+
+--Create an array of ojects--
+
+var objects = [
+  {
+    width: 8, 
+    height: 7
+  },
+  {
+    width: 12, 
+    height: 16
+  },
+  {
+    width: 19, 
+    height: 2
+  }
+];
+
+
+
 
 
 

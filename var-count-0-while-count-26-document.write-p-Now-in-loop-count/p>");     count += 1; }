@@ -38,8 +38,8 @@ var coordinates = [
 
 
 
---Quiz for JS Arrays--
-
+--Challenge for JS Arrays: Build a Quiz--
+---Part 1---
 
 // print('hey....what's going on here??');
 prompt("What is happening??");
@@ -74,7 +74,65 @@ for (var i = 0; i < userResponse.length; i += 1) {
   print('<p>' + 
   
 */
-                    
-      
-      
-                     
+
+
+---Part 2---
+    --> I was not quite on track w/this solution; needed function for building an ordered list in HTML 
+                 and needed to 'push' the answers to the right & wrong arrays
+
+var questions = [
+  ['How many states are in the United States?', 50],
+  ['How many continents are there?', 7],
+  ['How many legs does an insect have?', 6]
+];
+var correctAnswers = 0;
+var question;
+var answer;
+var response;
+var responseRight [];  // Houses correct responses
+var responseWrong [];  // Houses incorrect responses
+var x = -1;  // For loop in logging correct responses
+var y = -1;  // For loop in logging incorrect responses
+var html;
+
+function print(message) {
+  document.write(message);
+}
+
+for (var i = 0; i < questions.length; i += 1) {
+  question = questions[i][0];
+  answer = questions[i][1];
+  response = prompt(question);
+  response = parseInt(response);
+  if (response === answer) {
+    correctAnswers += 1;
+    x += 1;
+    responseRight[x] = question[i][0];
+    else 
+      y += 1;
+      responseWrong[y] = question[i][0];
+  } 
+}
+
+html = "You got " + (questions.length - correctAnswers) + " question(s) wrong."
+print(html);
+
+html += "<h2>You got " + correctAnswers + " question(s) right.</h2>"
+print(html);
+
+print("<p>Here are the questions you answered correctly:</p>");
+for (var i = 0; i < responseRight.length; i+=1 + "</p>") {
+  print(i + ". " + responseRight[i]);
+  
+}
+
+print("<p>Here are the questions you answered incorrectly:</p>");
+for (var i = 0; i < responseWrong.length; i+=1) {
+    print(i + ". " + responseWrong[i] = "</p>");
+  
+}
+
+
+
+
+

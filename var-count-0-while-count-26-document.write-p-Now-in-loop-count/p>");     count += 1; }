@@ -279,6 +279,43 @@ for (property in students) {
  
 ---Part 3---
 
+var message = '';
+var student;
+var nameLC;
+var i = 0;
+var nameInput = '';
+var found = false;
+
+function print(message) {
+  var outputDiv = document.getElementById('output');
+  outputDiv.innerHTML = message;
+}
+
+do {
+  nameInput = prompt("Which student do you want to view?");
+  nameInput = nameInput.toLowerCase();
+  for (var i = 0; i < students.length; i += 1) {
+    nameLC = students[i].name.toLowerCase;
+    if (nameLC === nameInput) {
+       student = students[i];
+       message += '<h2>Student: ' + student.name + '</h2>';
+       message += '<p>Track: ' + student.track + '</p>';
+       message += '<p>Points: ' + student.points + '</p>';
+       message += '<p>Achievements: ' + student.achievements + '</p>';
+       print(message);
+       found = true;
+       break;
+    } 
+  }
+  if (!found) {
+    message += '<h2>Student: " + student.name + ' does not exist</h2>';
+  }
+  
+} while (nameInput !== "quit");
+
+if nameInput === "quit"
+    break;
+    
 
 
 
